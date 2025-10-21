@@ -24,6 +24,7 @@ Use this table to jump directly to what you need:
 | **Pass environment variables to Lambda functions** | [ENVIRONMENT_VARIABLES.md](#-environment-variables) |
 | **Enable features only in production / Detect environment** | [BACKEND_ENV_CONFIG.md](#-backend-environment-configuration) |
 | **Build the frontend / Connect to backend** | [`frontend/` folder](#-frontend--client-side) |
+| **Fix TypeScript import errors (@/ vs @root)** | [PATH_ALIASES.md](./frontend/PATH_ALIASES.md) ⭐ NEW |
 | **Implement glassmorphism / liquid glass design** | [LIQUID_GLASS_DESIGN.md](#-frontend--client-side) ⭐ NEW |
 | **Fix deployment errors / Debug issues** | [`troubleshooting/` folder](#-troubleshooting) ⭐ NEW |
 | **Understand the rules** | [AI-DEVELOPMENT-GUIDELINES.md](#-critical-must-read-first) |

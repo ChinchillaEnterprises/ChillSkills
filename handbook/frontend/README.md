@@ -8,6 +8,7 @@
 
 | I Need To... | Go Here |
 |--------------|---------|
+| **Fix TypeScript import errors from Amplify** | [PATH_ALIASES.md](./PATH_ALIASES.md) ⭐ |
 | **Implement glassmorphism / liquid glass design** | [design/LIQUID_GLASS_DESIGN.md](#-design-system) |
 | **Set up authentication flows** | [Auth Flows](#1-auth-flowstsx---authentication-examples) |
 | **Create/update/delete data** | [Mutations](#2-mutationstsx---all-write-operations) |
