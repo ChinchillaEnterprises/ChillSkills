@@ -849,9 +849,18 @@ Navigation hub with "I Need To..." table for quick access to all frontend guides
 
 #### What's Inside:
 
+**⚙️ Configuration & Setup:**
+
+1. **[PATH_ALIASES.md](./frontend/PATH_ALIASES.md)** ⭐ **NEW**
+   - TypeScript path alias reference (`@/` vs `@root/`)
+   - How to import from Amplify backend
+   - Fix "Cannot find module" errors
+   - Common import patterns for Schema types
+   - Decision tree for choosing correct paths
+
 **🎨 Design System:**
 
-1. **[design/LIQUID_GLASS_DESIGN.md](./frontend/design/LIQUID_GLASS_DESIGN.md)** ⭐ **NEW**
+2. **[design/LIQUID_GLASS_DESIGN.md](./frontend/design/LIQUID_GLASS_DESIGN.md)** ⭐ **NEW**
    - Industrial Tron + Liquid Glass aesthetic
    - Apple-style glassmorphism with backdrop blur
    - **Physics-aided design** - Why white borders create glass illusion
@@ -900,6 +909,15 @@ client.models.Todo.onCreate().subscribe({
 **Call custom operation:**
 ```typescript
 const { data } = await client.mutations.processPayment({ orderId: "123" });
+```
+
+**Import Schema type (correct path):**
+```typescript
+// ✅ CORRECT - Use @root for Amplify backend
+import type { Schema } from '@root/amplify/data/resource';
+import { generateClient } from 'aws-amplify/data';
+
+const client = generateClient<Schema>();
 ```
 
 #### Design System Quick Reference:
@@ -1071,6 +1089,7 @@ resources/handbook/
 │
 └── frontend/                         ← Client-side code
     ├── README.md                     ├─ Navigation hub
+    ├── PATH_ALIASES.md               ├─ TypeScript import path reference ⭐ NEW
     └── design/                       └─ Design system ⭐ NEW
         └── LIQUID_GLASS_DESIGN.md        └─ Industrial Tron + Liquid Glass aesthetic
 ```
