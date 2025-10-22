@@ -41,6 +41,21 @@ Expert knowledge on how to properly maintain and update the handbook.
 Activate when adding new patterns or updating existing docs
 ```
 
+### 3. `webapp-testing` - Web Application Testing
+
+Automated testing toolkit for web applications using Playwright and Python.
+
+**What it does:**
+- Test local web applications with UI verification
+- Automate browser interactions (clicks, form fills, navigation)
+- Debug UI behavior and capture screenshots
+- Inspect page elements and identify selectors
+
+**How to use:**
+```
+Use the webapp-testing skill to test your web app, find selectors, or automate interactions
+```
+
 ---
 
 ## Installation
@@ -60,7 +75,7 @@ Activate when adding new patterns or updating existing docs
 3. **Verify installation:**
    ```bash
    ls -la ~/.claude/skills/
-   # Should see: handbook/ and handbook-updater/
+   # Should see: handbook/, handbook-updater/, and webapp-testing/
    ```
 
 4. **Test in Claude Code:**
@@ -172,8 +187,13 @@ GitHub (ChinchillaEnterprises/ChillSkills)
 │   ├── webhooks/                       # Webhook guides
 │   ├── frontend/                       # Client-side patterns
 │   └── troubleshooting/                # Debug guides
-└── handbook-updater/                   # Maintenance skill
-    └── SKILL.md                        # Update workflow
+├── handbook-updater/                   # Maintenance skill
+│   └── SKILL.md                        # Update workflow
+└── webapp-testing/                     # Web app testing skill
+    ├── SKILL.md                        # Skill configuration
+    ├── with_server.py                  # Server lifecycle management
+    ├── example_script.py                # Example Playwright script
+    └── ...                             # Additional testing resources
 ```
 
 ---
