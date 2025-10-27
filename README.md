@@ -56,6 +56,22 @@ Automated testing toolkit for web applications using Playwright and Python.
 Use the webapp-testing skill to test your web app, find selectors, or automate interactions
 ```
 
+### 4. `ui-debugging` - UI Issue Communication Protocol
+
+Standardized format for describing visual/layout problems in screenshots.
+
+**What it does:**
+- Provides structured screenshot protocol
+- Offers standardized layout issue template
+- Includes visual inspection checklist
+- Shows real-world examples of common UI issues
+
+**How to use:**
+```
+Share screenshots with the ui-debugging template to get faster issue resolution
+Use the template format: URL → What I See → What I Expected → The Problem → Layout Layers
+```
+
 ---
 
 ## Installation
@@ -75,7 +91,7 @@ Use the webapp-testing skill to test your web app, find selectors, or automate i
 3. **Verify installation:**
    ```bash
    ls -la ~/.claude/skills/
-   # Should see: handbook/, handbook-updater/, and webapp-testing/
+   # Should see: handbook/, handbook-updater/, webapp-testing/, ui-debugging/
    ```
 
 4. **Test in Claude Code:**
